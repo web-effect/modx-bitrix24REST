@@ -1,3 +1,6 @@
 [submodule "_build/includes/builder"]
 	path = _build/includes/builder
 	url = https://github.com/web-effect/modx-packageBuilder
+[submodule "core/components/bitrix24rest/vendor/bitrix-tools/crest"]
+	path = core/components/bitrix24rest/vendor/bitrix-tools/crest
+	url = https://github.com/bitrix-tools/crest

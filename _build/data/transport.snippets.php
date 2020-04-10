@@ -1,9 +1,9 @@
 <?php
 
 $sconfig=[
-    'sampleSnippet'=>[
-        'description'=>'SampleComponent snippet',
-    ],
+    'bitrix24.webhook'=>[
+        'description'=>'FormIt hook for bitrix24'
+    ]
 ];
 
 foreach($sconfig?:[] as $snippet=>$options){

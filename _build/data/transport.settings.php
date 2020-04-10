@@ -2,13 +2,33 @@
 
 
 $data['modSystemSetting']=[
-    'main'=>[
+    'webhook.accaunt'=>[
         'fields'=>[
-            'key'=>$config['component']['namespace'].'.sample_option',
-            'value'=>'sample_value',
+            'key'=>$config['component']['namespace'].'.webhook.accaunt',
+            'value'=>'',
             'xtype'=>'textfield',
             'namespace'=>$config['component']['namespace'],
-            'area'=>'sample_area'
+            'area'=>'bitrix24rest.webhook'
+        ],
+        'options'=>$config['data_options']['modSystemSetting']
+    ],
+    'webhook.user'=>[
+        'fields'=>[
+            'key'=>$config['component']['namespace'].'.webhook.user',
+            'value'=>'1',
+            'xtype'=>'textfield',
+            'namespace'=>$config['component']['namespace'],
+            'area'=>'bitrix24rest.webhook'
+        ],
+        'options'=>$config['data_options']['modSystemSetting']
+    ],
+    'webhook.key'=>[
+        'fields'=>[
+            'key'=>$config['component']['namespace'].'.webhook.key',
+            'value'=>'',
+            'xtype'=>'text-password',
+            'namespace'=>$config['component']['namespace'],
+            'area'=>'bitrix24rest.webhook'
         ],
         'options'=>$config['data_options']['modSystemSetting']
     ],
