@@ -8,7 +8,7 @@ $data['modSystemSetting']=[
             'value'=>'',
             'xtype'=>'textfield',
             'namespace'=>$config['component']['namespace'],
-            'area'=>'bitrix24rest.webhook'
+            'area'=>$config['component']['namespace'].'.webhook'
         ],
         'options'=>$config['data_options']['modSystemSetting']
     ],
@@ -18,7 +18,7 @@ $data['modSystemSetting']=[
             'value'=>'1',
             'xtype'=>'textfield',
             'namespace'=>$config['component']['namespace'],
-            'area'=>'bitrix24rest.webhook'
+            'area'=>$config['component']['namespace'].'.webhook'
         ],
         'options'=>$config['data_options']['modSystemSetting']
     ],
@@ -28,7 +28,7 @@ $data['modSystemSetting']=[
             'value'=>'',
             'xtype'=>'text-password',
             'namespace'=>$config['component']['namespace'],
-            'area'=>'bitrix24rest.webhook'
+            'area'=>$config['component']['namespace'].'.webhook'
         ],
         'options'=>$config['data_options']['modSystemSetting']
     ],
