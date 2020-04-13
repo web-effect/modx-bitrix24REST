@@ -93,15 +93,16 @@ class bitrix24REST
                 }
                 //$this->modx->log(1,print_r($_options,1));
                 $response=$REST::callBatch($_options,$options['halt']?:0);
-                //$this->modx->log(1,print_r($response,1));
+                if($options['log'])$this->modx->log(MODX_LOG_LEVEL_ERROR,print_r($response,1));
             }else{
                 $_options=$options;
                 unset($_options['success']);
                 unset($_options['failure']);
                 unset($_options['_action']);
+                unset($_options['log']);
                 //$this->modx->log(1,print_r($_options,1));
                 $response=$REST::call($options['_action'],$_options);
-                //$this->modx->log(1,print_r($response,1));
+                if($options['log'])$this->modx->log(MODX_LOG_LEVEL_ERROR,print_r($response,1));
             }
             
             if(!empty($response['error'])){
